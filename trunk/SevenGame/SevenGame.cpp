@@ -28,22 +28,23 @@
 #pragma comment(lib, "dxerr.lib")
 #pragma comment(lib, "dsound.lib")
 
-#pragma comment(lib, "lua.lib")
-#pragma comment(lib, "OrangeDump.lib")
-#pragma comment(lib, "OrangeIni.lib")
+//#pragma comment(lib, "lua.lib")
+//#pragma comment(lib, "OrangeDump.lib")
+//#pragma comment(lib, "OrangeIni.lib")
           
 int APIENTRY _tWinMain(HINSTANCE hInstance,
 					   HINSTANCE hPrevInstance,
 					   LPTSTR    lpCmdLine,
 					   int       nCmdShow)
 {
-	CEHModuleManager ModuleManger;
+	/*CEHModuleManager ModuleManger;
 
 	if(FALSE == ModuleManger.Install(DL_MY_HANDLER_STACKOVERFLOW, EH_BUGTRAP_MIX))
 	{
 		MessageBox(NULL, _T("예외 핸들러 설치 실패"), _T("Seven Game"), MB_OK);
 		return 0;
-	}
+	}*/
+
 
 	CProgramMain* pMain = new CProgramMain();
 	pMain->Initialize();
