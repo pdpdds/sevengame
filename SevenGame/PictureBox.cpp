@@ -164,13 +164,16 @@ BOOL CPictureBox::OnRenderRegion(float fElapsedTime,
 
 	pVertices[0].tu       = fColRatio;
 	pVertices[0].tv       = fRowRatio;
+
 	pVertices[1].tu       = fColRatio + fColUnitRatio;
 	pVertices[1].tv       = fRowRatio;
+
 	pVertices[2].tu       = fColRatio + fColUnitRatio;
 	pVertices[2].tv       = fRowRatio + fRowUnitRatio;
 
 	pVertices[3].tu       = fColRatio;
 	pVertices[3].tv       = fRowRatio;
+
 	pVertices[4].tu       = fColRatio + fColUnitRatio;
 	pVertices[4].tv       = fRowRatio + fRowUnitRatio;
 

@@ -30,7 +30,7 @@ void CSGUser::UpdateUserCard(int iCardNum)
 	iCardNum += 1;
 
 	if( iCardNum >= 1 && iCardNum <= 13)
-		SpadeCardArray[iCardNum] = iCardNum;
+		CloverCardArray[iCardNum] = iCardNum;
 
 	if( iCardNum >= 14 && iCardNum <= 26)
 		HeartCardArray[iCardNum-13] = iCardNum-13;
@@ -39,7 +39,7 @@ void CSGUser::UpdateUserCard(int iCardNum)
 		DiamondCardArray[iCardNum-26] = iCardNum-26;
 
 	if( iCardNum >= 40 && iCardNum <= 52	)
-		CloverCardArray[iCardNum-39] = iCardNum-39;
+		SpadeCardArray[iCardNum-39] = iCardNum-39;
 }
 
 void CSGUser::SetSevenCardNull()

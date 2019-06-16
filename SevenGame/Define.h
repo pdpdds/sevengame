@@ -23,10 +23,10 @@ typedef struct
 #define MAX_CARD_NUM 13
 #define MAX_PASS_NUM 3
 
+#define TYPE_CLOVER  0
 #define TYPE_HEART   1
-#define TYPE_SPADE   2
-#define TYPE_CLOVER  3
-#define TYPE_DIAMOND 4
+#define TYPE_DIAMOND 2
+#define TYPE_SPADE   3
 
 #define PRIORTY_A    0
 #define PRIORTY_B	 1

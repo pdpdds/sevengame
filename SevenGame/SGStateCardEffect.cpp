@@ -39,15 +39,24 @@ BOOL SGStateCardEffect::OnRender( float fElapsedTime )
 	float fCurPosY = (float)pCardEffectInfo->iOriY + (float)(pCardEffectInfo->iDestY - pCardEffectInfo->iOriY) * (fEffectTime / fCardSpriteSpeed);
 
 	int iCol, iRow;
-	pManager->GetCardImageIndex(pCardInfo, iCol, iRow);
+	pManager->GetCardImageIndex(pCardInfo, iCol, iRow);	
+
+	float x = 0;
+	float y = 0;
+
+	x = ((float)(iCol)) / (float)CARDNUM_CARDSET_WIDTH;
+	y = ((float)(iRow)) / (float)CARDNUM_CARDSET_HEIGHT;
+
+	if (iRow == 0)
+		y = 0;
 
 	if(fEffectTime < fCardSpriteSpeed)
 	{
 		pRenderer->OnRenderRegion(fElapsedTime, PICTUREBOX_CARDSET, 
 			fCurPosX, 
 			fCurPosY,
-			((float)(iCol))/CARDNUM_CARDSET_WIDTH,  
-			((float)(iRow))/CARDNUM_CARDSET_HEIGHT,
+			x,  
+			y,
 			CARDRATIO_CARDSET_WIDTH,
 			CARDRATIO_CARDSET_HEIGHT,
 			CARD_WIDTH,

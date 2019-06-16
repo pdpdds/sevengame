@@ -674,7 +674,7 @@ BOOL CDirectXSystem::DrawCard(float fElapsedTime)
 {
 	//Sprite Global Table
 	CSGTable *pTable = m_SevenGameManger->GetTable();
-	int *paTable = pTable->GetSpadeTableArray();
+	int *paTable = pTable->GetCloverTableArray();
 
 	CPictureBox* pCardSet = m_PictureBoxMgr.GetPictureBox(PICTUREBOX_CARDSET);
 	CPictureBox* pCardHorizon = m_PictureBoxMgr.GetPictureBox(PICTUREBOX_CARDHORIZON);
@@ -730,7 +730,7 @@ BOOL CDirectXSystem::DrawCard(float fElapsedTime)
 		 }  		  									
 	}
 	
-	paTable = pTable->GetCloverTableArray();
+	paTable = pTable->GetSpadeTableArray();
 	for(int i=1; i<=MAX_CARD_NUM; i++ )
 	{
 	        if(paTable[i] != -1)	   

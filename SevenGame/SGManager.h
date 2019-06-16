@@ -51,7 +51,10 @@ public:
 	SPRITE_CARD_INFO* GetUserCard(){return m_CARD;}
 
 	SCardInfo* GetSpriteCard(){return &m_SelectedCard;}
-	VOID SetSpriteCard(SCardInfo& Card){m_SelectedCard = Card;}
+	VOID SetSpriteCard(SCardInfo& Card)
+	{
+		m_SelectedCard = Card;
+	}
 
 
 	CARD_EFFECT_INFO* GetCardEffectInfo(){return &m_CardEffectInfo;}
