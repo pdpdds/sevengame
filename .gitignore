@@ -1,0 +1,17 @@
+
+*.obj
+.vs/SevenGame/v16/.suo
+*.db
+*.db-shm
+*.opendb
+*.db-wal
+*.exe
+*.ilk
+*.pdb
+*.log
+*.recipe
+*.pch
+*.res
+*.tlog
+*.txt
+*.idb
