@@ -15,3 +15,7 @@
 *.tlog
 *.txt
 *.idb
+
+Bin
+.vs
+
