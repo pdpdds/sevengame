@@ -168,7 +168,7 @@ void CSGManager::CardDistribue()
 
 	int paCardDistribute[MAX_CARD_NUM*4];
 	
-	memset(paCardDistribute,-1,MAX_CARD_NUM*4);
+	memset(paCardDistribute,-1,MAX_CARD_NUM * 4 * sizeof(int));
 	
 	int iCardCount = 0;
     while ( iCardCount < MAX_CARD_NUM*4 )
