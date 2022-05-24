@@ -1,7 +1,7 @@
 # Seven Game
 
 - Build  
-only visual studio 2017 required.  
+  visual studio 2019 or higher.
 
 - Screen Shot
 <img src="./img/snap0247.jpg">
